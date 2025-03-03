@@ -1,0 +1,117 @@
+.compact-card {
+  display: flex;
+  flex: 1;
+  height: 7rem !important;
+  border-radius: 0.7rem;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.compact-card:hover {
+  box-shadow: none !important;
+}
+
+.radial-bar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.radial-bar > span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.CircularProgressbar {
+  width: 4rem !important;
+  overflow: visible;
+}
+
+.CircularProgressbar-path {
+  stroke: white !important;
+  stroke-width: 12px !important;
+  filter: drop-shadow(2px 4px 6px white);
+}
+
+.CircularProgressbar-trail {
+  display: none;
+}
+
+.CircularProgressbar-text {
+  fill: white !important;
+}
+
+.detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.detail > span:nth-child(2) {
+  font-size: 1.38rem;
+  font-weight: bold;
+}
+
+.detail > span:nth-child(3) {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.expanded-card {
+  position: absolute;
+  width: 60%;
+  height: 50vh;
+  z-index: 9;
+  left: 13rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.close-button {
+  align-self: flex-end;
+  cursor: pointer;
+  color: white;
+}
+
+.expanded-card > span:nth-of-type(1) {
+  color: white;
+  font-size: 1.63rem;
+  font-weight: bold;
+  text-shadow: 0px 0px 15px white;
+}
+
+.expanded-card > span:nth-of-type(2) {
+  color: rgb(247, 246, 246);
+  font-size: 1rem;
+}
+
+.chart-container {
+  width: 70%;
+}
+
+@media screen and (max-width: 1200px) {
+  .expanded-card {
+    top: 2rem;
+    height: 70vh;
+    left: 6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .expanded-card {
+    top: 8rem;
+    height: 50%;
+    left: 1rem;
+    width: 80%;
+  }
+}

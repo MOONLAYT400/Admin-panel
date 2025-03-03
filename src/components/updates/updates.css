@@ -1,0 +1,28 @@
+.updates {
+  width: 85%;
+  background: white;
+  border-radius: 0.75rem;
+  gap: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+
+.noti-part {
+  margin-bottom: 0.25rem;
+}
+
+.customer-name {
+  font-weight: bold;
+}
+
+.update {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.update > img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
